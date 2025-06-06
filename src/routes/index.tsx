@@ -1,7 +1,7 @@
-import { createFileRoute } from "@tanstack/react-router";
+;
 import { getServerSecret } from "~/server-functions";
 
-export const Route = createFileRoute("/")({
+export const Route = createFileRoute({
   component: Home,
   loader: async () => {
     const secret = await getServerSecret();
